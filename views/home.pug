@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css")
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		style
+			include ../css/custom.css
+		title Convert
+	body
+		header
+			.w-100.pb-3.pt-3.bg-dark.text-white.text-center
+				h1 Anime Rules
+		article
+			.mx-auto.p-3.cus-width.text-center
+				br         
+				br
+				h4 Convert the JSON study record from WTC to a easier to read format.
+				br
+				br
+		div#main.mx-auto.text-center
+			h5 JSON Converter
+			label.file
+				input(type="file" id="file" name="test" aria-label="File browser" accept="application/JSON" onchange="update()")
+				span.file-custom(id="span1")
+			br
+			br
+			h5#name
+			button.btn(onclick="convert()") Convert
+			br
+			br
+			br
+			br
+			br
+			h6#content
+			div#contain
+			br
+			br
+			br
+			h5#CID
+			div#CS
+			br
+			br
+			div#PROJECTS
+			br
+			br
+			br
+			br
+			br
+			br
+	include footer
+script(type='text/javascript', src="https://code.jquery.com/jquery-3.5.1.js")
+script(type='text/javascript', src="https://kit.fontawesome.com/5ea23c88d1.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js" crossorigin="anonymous")
+script(src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js" crossorigin="anonymous")
+script
+	include ../scripts/home.js
